@@ -65,9 +65,4 @@
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-  <xsd:element name="Title" type="xsd:string"/>
-  <xsd:element name="Author" type="xsd:string"/>
-  <xsd:element name="Date" type="xsd:string"/>
-  <xsd:element name="ISBN" type="xsd:string"/>
-  <xsd:element name="Publisher" type="xsd:string"/>
 </xsd:schema>
