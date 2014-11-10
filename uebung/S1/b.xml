@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="a.xsd">
+    <students>
+        <student id="1" mat="123456">
+            <firstname>Peter</firstname>
+            <lastname>Lustig</lastname>
+            <email>peter@lustig.de</email>
+            <career>bachelor</career>
+        </student>
+    </students>
+    <test subject="XML in Communication Systems" date="12.12.2012" startingTime="14:00" duration="1" unit="hour">
+        <results>
+            <result mat="123456">1.0</result>
+        </results>
+    </test>
+</exam>

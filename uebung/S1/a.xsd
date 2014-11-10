@@ -1,0 +1,52 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="exam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="students">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="student">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="firstname"/>
+                    <xs:element type="xs:string" name="lastname"/>
+                    <xs:element type="xs:string" name="email"/>
+                    <xs:element type="xs:string" name="career"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id"/>
+                  <xs:attribute type="xs:int" name="mat"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="test">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="results">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="result">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:float">
+                            <xs:attribute type="xs:int" name="mat"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="subject"/>
+            <xs:attribute type="xs:string" name="date"/>
+            <xs:attribute type="xs:string" name="startingTime"/>
+            <xs:attribute type="xs:byte" name="duration"/>
+            <xs:attribute type="xs:string" name="unit"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
