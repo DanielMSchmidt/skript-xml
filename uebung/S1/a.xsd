@@ -48,9 +48,13 @@
               <xsd:element name="results">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <xsd:element name="result">
+                    <xsd:element name="result" maxOccurs="unbounded">
                       <xsd:complexType>
-                        <xsd:attribute name="mat" type="xsd:int" />
+                        <xsd:simpleContent>
+                          <xsd:extension base="xsd:string">
+                            <xsd:attribute name="mat" type="xsd:int" />
+                          </xsd:extension>
+                        </xsd:simpleContent>
                       </xsd:complexType>
                     </xsd:element>
                   </xsd:sequence>

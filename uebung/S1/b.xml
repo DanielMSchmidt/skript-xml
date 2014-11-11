@@ -15,7 +15,7 @@
             <career>master</career>
         </student>
     </students>
-    <test subject="XML in Communication Systems" date="12.12.2012" startingTime="14:00" duration="1" unit="hour">
+    <test subject="XML in Communication Systems" date="2001-10-26" startingTime="21:32:52" duration="1" unit="hour">
         <results>
             <result mat="123456">1.0</result>
             <result mat="789012">1.0</result>
