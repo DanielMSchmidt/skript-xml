@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:exam="http://www.exam.org/xml/exam"
         targetNamespace="http://www.exams.org"
-        elementFormDefault="qualified">
-
-
-
-
-
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
   <xsd:element name="exam">
      <xsd:complexType>
       <xsd:sequence>
@@ -30,13 +25,18 @@
                       <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                           <xsd:enumeration value="bachelor" />
+                          <xsd:enumeration value="master" />
                           <xsd:enumeration value="Diploma" />
                           <xsd:enumeration value="ph.d." />
                         </xsd:restriction>
                       </xsd:simpleType>
                     </xsd:element>
                   </xsd:sequence>
-                  <xsd:attribute name="mat" type="xsd:ID" ></xsd:attribute>
+                  <xsd:attribute name="mat" type="xsd:string" />
+                  <xsd:unique name="matrikelnummerUniqueKey">
+                    <xsd:selector xpath="student" />
+                    <xsd:field xpath="@mat" />
+                  </xsd:unique>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>

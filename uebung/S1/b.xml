@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<exam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<exam xmlns="http://www.exams.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="a.xsd">
     <students>
         <student mat="123456">
@@ -18,7 +18,7 @@
     <test subject="XML in Communication Systems" date="12.12.2012" startingTime="14:00" duration="1" unit="hour">
         <results>
             <result mat="123456">1.0</result>
-            <result mat="789012">3.0</result>
+            <result mat="789012">1.0</result>
         </results>
     </test>
 </exam>
