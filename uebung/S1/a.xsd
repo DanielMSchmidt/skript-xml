@@ -44,22 +44,24 @@
         </xsd:element>
         <xsd:element name="test">
           <xsd:complexType>
-            <xsd:element name="results">
-              <xsd:attribute name="subject" type="xsd:string" />
-              <xsd:attribute name="date" type="date" />
-              <xsd:attribute name="startingTime" type="time" />
-              <xsd:attribute name="duration" type="integer" />
-              <xsd:attribute name="unit" type="xsd:string" />
-              <xsd:complexType>
-                <xsd:sequence>
-                  <xsd:element name="result" type="xsd:string">
-                    <xsd:complexType>
-                      <xsd:attribute name="mat" type="integer" />
-                    </xsd:complexType>
-                  </xsd:element>
-                </xsd:sequence>
-              </xsd:complexType>
-            </xsd:element>
+            <xsd:sequence>
+              <xsd:element name="results">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="result">
+                      <xsd:complexType>
+                        <xsd:attribute name="mat" type="xsd:int" />
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="subject" type="xsd:string" />
+            <xsd:attribute name="date" type="xsd:date" />
+            <xsd:attribute name="startingTime" type="xsd:time" />
+            <xsd:attribute name="duration" type="xsd:int" />
+            <xsd:attribute name="unit" type="xsd:string" />
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
