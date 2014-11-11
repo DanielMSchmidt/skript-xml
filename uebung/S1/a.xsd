@@ -33,11 +33,11 @@
                     </xsd:element>
                   </xsd:sequence>
                   <xsd:attribute name="mat" type="xsd:string" />
-                  <xsd:unique name="matrikelnummerUniqueKey">
-                    <xsd:selector xpath="student" />
-                    <xsd:field xpath="@mat" />
-                  </xsd:unique>
                 </xsd:complexType>
+                <xsd:unique name="matrikelnummerUniqueKey">
+                  <xsd:selector xpath="student" />
+                  <xsd:field xpath="@mat" />
+                </xsd:unique>
               </xsd:element>
             </xsd:sequence>
           </xsd:complexType>
