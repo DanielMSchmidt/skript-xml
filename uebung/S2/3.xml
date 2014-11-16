@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Adressbook xmlns="http://www.uni-kiel.com"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.uni-kiel.com Adressbook.xsd">
+  <Person id="Verne_Jules" >
+      <name>Jules</name>
+      <surname>Verne</surname>
+      <gender>male</gender>
+      <role>Admin</role>
+      <IP>192.168.1.13</IP>
+  </Person>
+
+  <Person id="Schmidt_Daniel">
+      <name>Jules</name>
+      <surname>Verne</surname>
+      <gender>male</gender>
+      <role>Admin</role>
+      <IP>192.168.1.13</IP>
+  </Person>
+</Adressbook>
