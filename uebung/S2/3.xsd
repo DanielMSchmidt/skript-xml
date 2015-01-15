@@ -8,9 +8,31 @@
     <xsd:element name="Adressbook" type="Adressbook"/>
 
     <xsd:complexType name="Adressbook">
-        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
-            <xsd:element name="Person" type="Person"/>
-        </xsd:sequence>
+        <xsd:choice>
+            <xsd:sequence maxOccurs="unbounded">
+                <xsd:element name="Person" type="Person"  />
+                <xsd:element name="User" type="User"  />
+                <xsd:element name="Guest" type="Guest" />
+            </xsd:sequence>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="Admin">
+        <xsd:complexContent>
+            <xsd:extension base="Person"></xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="User">
+        <xsd:complexContent>
+            <xsd:extension base="Person"></xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="Guest">
+        <xsd:complexContent>
+            <xsd:extension base="Person"></xsd:extension>
+        </xsd:complexContent>
     </xsd:complexType>
 
     <xsd:complexType name="Person">
